@@ -17,11 +17,11 @@ jobs:
           TYPESENSE_ENABLE_CORS: true
         ports:
           - 8108:8108
-        options: >-
-          --health-cmd "curl http://localhost:8108/health"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+        # options: >-
+        #   --health-cmd "curl http://localhost:8108/health"
+        #   --health-interval 10s
+        #   --health-timeout 5s
+        #   --health-retries 5
         volumes:
           - ts_data:/data
 
